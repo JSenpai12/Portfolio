@@ -19,6 +19,7 @@
     href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
+  <link rel="icon" type="image.png" href="images/Glowing Mint Code Emblem.png">
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -628,9 +629,8 @@
 
     </section>
 
-
     <!-- ==============================
-         Contact section
+        Contact section
     =============================== -->
     <section class="contact-section section-shell" id="contact">
 
@@ -644,13 +644,15 @@
           <span>it happen.</span>
         </h2>
 
-        <a
+        <!-- Open contact form -->
+        <button
           class="contact-arrow"
-          href="mailto:jhonmekierbayan@gmail.com"
-          aria-label="Send an email"
+          id="openContactForm"
+          aria-label="Open contact form"
+          type="button"
         >
           ↗
-        </a>
+        </button>
 
       </div>
 
@@ -669,6 +671,127 @@
       </div>
 
     </section>
+
+
+    <!-- ==============================
+        Floating contact window
+    =============================== -->
+    <div class="contact-modal" id="contactModal" aria-hidden="true">
+
+      <!-- Modal background -->
+      <div class="contact-modal-overlay" id="contactOverlay"></div>
+
+      <!-- Modal window -->
+      <div
+        class="contact-modal-window"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contactModalTitle"
+      >
+
+        <!-- Modal header -->
+        <div class="contact-modal-header">
+
+          <div>
+            <p class="eyebrow">CONTACT / INQUIRY</p>
+            <h2 id="contactModalTitle">Send a message.</h2>
+          </div>
+
+          <!-- Close button -->
+          <button
+            class="contact-modal-close"
+            id="closeContactForm"
+            type="button"
+            aria-label="Close contact form"
+          >
+            ×
+          </button>
+
+        </div>
+
+        <!-- Contact form -->
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mgaklyjk"
+          method="POST"
+        >
+
+          <!-- Name -->
+          <div class="form-group">
+
+            <label for="modalName">Your name</label>
+
+            <input
+              type="text"
+              id="modalName"
+              name="name"
+              placeholder="John Doe"
+              required
+            >
+
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+
+            <label for="modalEmail">Your email</label>
+
+            <input
+              type="email"
+              id="modalEmail"
+              name="email"
+              placeholder="you@example.com"
+              required
+            >
+
+          </div>
+
+          <!-- Subject -->
+          <div class="form-group">
+
+            <label for="modalSubject">Subject</label>
+
+            <input
+              type="text"
+              id="modalSubject"
+              name="subject"
+              placeholder="Project inquiry"
+              required
+            >
+
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+
+            <label for="modalMessage">Message</label>
+
+            <textarea
+              id="modalMessage"
+              name="message"
+              rows="5"
+              placeholder="Tell me what you have in mind..."
+              required
+            ></textarea>
+
+          </div>
+
+          <!-- Submit button -->
+          <button class="contact-submit" type="submit">
+
+            Send message
+            <span>↗</span>
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+
+
 
   </main>
 

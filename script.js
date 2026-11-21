@@ -147,3 +147,44 @@ heroIndicators.forEach((indicator) => {
     showHeroSlide(slideIndex);
   });
 });
+
+
+// ------------------------------
+// Floating contact form
+// ------------------------------
+
+const openContactForm = document.getElementById("openContactForm");
+const closeContactForm = document.getElementById("closeContactForm");
+const contactModal = document.getElementById("contactModal");
+const contactOverlay = document.getElementById("contactOverlay");
+
+// Open the contact window
+openContactForm.addEventListener("click", () => {
+  contactModal.classList.add("active");
+  contactModal.setAttribute("aria-hidden", "false");
+
+  document.body.style.overflow = "hidden";
+
+  document.getElementById("modalName").focus();
+});
+
+// Close the contact window
+function closeModal() {
+  contactModal.classList.remove("active");
+  contactModal.setAttribute("aria-hidden", "true");
+
+  document.body.style.overflow = "";
+}
+
+// Close button
+closeContactForm.addEventListener("click", closeModal);
+
+// Close when clicking the background overlay
+contactOverlay.addEventListener("click", closeModal);
+
+// Close using Escape key
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && contactModal.classList.contains("active")) {
+    closeModal();
+  }
+});
