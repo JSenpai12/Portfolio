@@ -1,26 +1,65 @@
-# GitHub-inspired portfolio landing page
+# Developer Portfolio
 
-A beginner-friendly portfolio page made with plain HTML, CSS, and JavaScript.
+A personal portfolio showcasing my projects, technical skills, and journey in software development.
 
-## Run it
+## Overview
 
-1. Extract the ZIP file.
-2. Open the `github-inspired-portfolio` folder.
-3. Open `index.html` in your browser.
+This portfolio serves as a space to showcase the projects I've built, technologies I'm exploring, and my growth as a developer. It highlights my interest in software development, problem-solving, backend systems, and building practical solutions.
 
-No framework, build tool, or installation is required.
+## Built With
 
-## Files
+- HTML5
+- CSS3
+- JavaScript
 
-- `index.html` — page structure and content
-- `style.css` — layout, colors, responsive styles, and project artwork
-- `script.js` — mobile navigation, project carousel, and demo contribution grid
+## Features
 
-## Customize it
+- Responsive layout for desktop and mobile
+- Interactive project carousel
+- Project video previews
+- GitHub repository links
+- Personal introduction and skills section
+- Interactive contribution-style grid
+- Contact section
 
-1. In `index.html`, replace **Alex Morgan**, the introduction, project names, descriptions, and email address with your own details.
-2. Replace the example GitHub links (`https://github.com/`) with your GitHub profile URL.
-3. The contribution grid is illustrative and random on each page load. Replace it with real GitHub data if you want accurate activity.
-4. Project preview artwork is made with CSS shapes, so you can use the page without downloading image assets.
+## Project Structure
 
-The font is loaded from Google Fonts. If you are offline, the page falls back to standard sans-serif and monospace fonts.
+```text
+portfolio/
+├── index.html
+├── style.css
+├── script.js
+├── images/
+├── videos/
+└── README.md
+```
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd YOUR_REPOSITORY
+```
+
+Run the project locally by opening `index.html` in your browser or using a local development server.
+
+## Preview
+
+Visit the live portfolio: **[Portfolio Website](YOUR_PORTFOLIO_URL)**
+
+## Contact
+
+Feel free to explore my repositories and projects on GitHub.
+
+- GitHub: [YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+
+---
+
+Built with curiosity, experimentation, and a willingness to learn.
