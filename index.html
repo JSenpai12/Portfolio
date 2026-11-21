@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="A developer portfolio inspired by GitHub and editorial portfolio layouts."
+  >
+
+  <title>Jhon Mekier Bayan — Developer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==============================
+       Header and navigation
+  =============================== -->
+  <header class="site-header">
+
+    <!-- Website brand -->
+    <a class="brand" href="#home" aria-label="Jhon Mekier Bayan home">
+      <span class="brand-mark">⌘</span>
+
+      <span>
+        jhonmekierbayan<span class="brand-muted">.dev</span>
+      </span>
+    </a>
+
+    <!-- Navigation links -->
+    <nav class="main-nav" id="mainNav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Contact button -->
+    <a class="header-button" href="mailto:hello@example.com">
+      Let’s talk
+      <span>↗</span>
+    </a>
+
+    <!-- Mobile navigation toggle -->
+    <button
+      class="menu-button"
+      id="menuButton"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+  </header>
+
+
+  <!-- ==============================
+       Main content
+  =============================== -->
+  <main id="home">
+
+    <!-- ==============================
+         Hero section
+    =============================== -->
+    <section class="hero section-shell" id="home">
+
+      <!-- Background image carousel -->
+      <div class="hero-background">
+        <div class="hero-slide active"></div>
+        <div class="hero-slide"></div>
+        <div class="hero-slide"></div>
+      </div>
+
+      <!-- Dark overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Hero text and content -->
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          OPEN TO OPPORTUNITIES
+        </p>
+
+        <p class="hero-kicker">
+          INDEPENDENT DEVELOPER · PHILIPPINES
+        </p>
+
+        <h1>
+          Building software<br>
+          for real<span class="serif-word"> world needs.</span>
+        </h1>
+
+        <p class="hero-description">
+            Hey, I'm Jhon Mekier — a developer who enjoys exploring ideas, solving real-world problems, 
+            and building things that are meant to be used.
+        </p>
+
+        <!-- Hero buttons -->
+        <div class="hero-actions">
+
+          <a class="button button-dark" href="#projects">
+            Explore projects
+            <span>↘</span>
+          </a>
+
+          <a class="text-link" href="#about">
+            A little about me
+            <span>↗</span>
+          </a>
+
+        </div>
+
+        <!-- Statistics -->
+        <div class="hero-stats">
+
+          <div>
+            <strong>03<span>+</span></strong>
+            <small>Years learning</small>
+          </div>
+
+          <div>
+            <strong>38</strong>
+            <small>Projects built</small>
+          </div>
+
+          <div>
+            <strong>12<span>k</span></strong>
+            <small>Lines of curiosity</small>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Hero carousel controls -->
+      <div class="hero-controls">
+
+        <button
+          class="hero-arrow"
+          id="prevHero"
+          aria-label="Previous image"
+        >
+          ←
+        </button>
+
+        <!-- Slide indicators -->
+        <div class="hero-indicators">
+
+          <button
+            class="hero-indicator active"
+            data-slide="0"
+            aria-label="Go to slide 1"
+          ></button>
+
+          <button
+            class="hero-indicator"
+            data-slide="1"
+            aria-label="Go to slide 2"
+          ></button>
+
+          <button
+            class="hero-indicator"
+            data-slide="2"
+            aria-label="Go to slide 3"
+          ></button>
+
+        </div>
+
+        <button
+          class="hero-arrow"
+          id="nextHero"
+          aria-label="Next image"
+        >
+          →
+        </button>
+
+        <!-- Current slide number -->
+        <span class="hero-slide-number">
+          01 / 03
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==============================
+         About section
+    =============================== -->
+    <section class="about-section section-shell" id="about">
+
+      <!-- About layout: Profile image and introduction -->
+      <div class="about-layout">
+
+        <!-- Profile picture -->
+        <div class="about-profile">
+
+          <video
+            class="profile-image"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="videos/profile.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+
+        <!-- About text and supporting image -->
+        <div class="about-main">
+
+          <!-- Section heading -->
+          <div class="section-heading">
+
+            <p class="eyebrow">01 — A QUICK INTRODUCTION</p>
+
+            <h2>
+              Curious by nature.<br>
+              <span>Developer by choice.</span>
+            </h2>
+
+          </div>
+
+          <!-- About content -->
+          <div class="about-content">
+
+            <p class="about-lead">
+              From everyday workflows to bigger ideas,
+              I enjoy building solutions that bring clarity to problems,
+              reduce unnecessary complexity, and make things work better.
+            </p>
+
+            <div class="about-details">
+
+              <p>
+                Developing my skills in software engineering,
+                backend development, and automation while exploring
+                the systems and infrastructure behind reliable software.
+              </p>
+
+              <a
+                class="text-link"
+                href="https://github.com/JSenpai12"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Find me on GitHub ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Skills and technologies -->
+      <div class="skill-strip">
+
+        <span>MY TOOLKIT</span>
+
+        <div class="skill-list">
+          <span>Python</span>
+          <span>Supabase</span>
+          <span>JavaScript</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>NestJS</span>
+          <span>Linux/Ubuntu</span>
+          <span>Neovim</span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==============================
+         Projects section
+    =============================== -->
+    <section class="projects-section section-shell" id="projects">
+
+      <!-- Projects heading and controls -->
+      <div class="projects-heading">
+
+        <div>
+          <p class="eyebrow">02 — SELECTED WORK</p>
+
+          <h2>
+            Things I’ve <span>built.</span>
+          </h2>
+        </div>
+
+        <!-- Project carousel controls -->
+        <div class="carousel-controls">
+
+          <button
+            class="carousel-button"
+            id="prevProject"
+            aria-label="Previous projects"
+          >
+            ←
+          </button>
+
+          <button
+            class="carousel-button"
+            id="nextProject"
+            aria-label="Next projects"
+          >
+            →
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Project carousel -->
+      
+      <div class="project-window">
+
+        <div class="project-track" id="projectTrack">
+
+          <!-- Project 1: Northstar Dashboard -->
+          <article class="project-card">
+
+            <!-- Project artwork -->
+            <div class="project-art art-dashboard">
+
+              <video
+                class="project-video"
+                autoplay
+                muted
+                loop
+                playsinline
+              >
+                <source src="videos/Hellbound_cut.webm" type="video/webm">
+              </video>
+
+              <span class="art-index">01 / 03</span>
+
+            </div>
+
+            <!-- Project description -->
+            <div class="project-info">
+
+              <div>
+                <p class="project-type">DESKTOP GAME . 2026</p>
+
+            <h3>HellBound</h3>
+
+            <p>
+            A Doom-inspired 2.5D FPS game built with Python and Ursina.
+            The project uses a 3D environment with 2D billboard sprites for enemies, weapons,
+            and items, inspired by the visual style of the original Doom (1993).
+            </p>
+      </div>
+
+          <a
+            href="https://github.com/JSenpai12/HellBound-A-python-based-FPS-game"
+            class="round-link"
+            aria-label="HellBound"
+          >
+            ↗
+          </a>
+
+        </div>
+
+      <!-- Project technologies -->
+      <div class="project-tags">
+        <span>Python</span>
+        <span>Ursina</span>
+        <span>JSON</span>
+        <span>Freedom</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Linux/Ubuntu</span>
+      </div>
+
+    </article>
+
+
+    <!-- Project 2: Forma Objects -->
+    <article class="project-card">
+
+      <!-- Project artwork -->
+      <div class="project-art art-commerce">
+
+        <video
+          class="project-video"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source src="videos/IMS.webm" type="video/webm">
+        </video>
+
+        <span class="art-index">02 / 03</span>
+
+      </div>
+
+      <!-- Project description -->
+      <div class="project-info">
+
+        <div>
+          <p class="project-type">SYSTEM · 2026</p>
+
+          <h3>Stock Wise</h3>
+
+          <p>
+            A web-based inventory management platform for small-to-medium businesses, 
+            designed to replace spreadsheets with a single dashboard for tracking products, 
+            stock levels, suppliers, and sales.
+          </p>
+        </div>
+
+        <a
+          href="https://github.com/JSenpai12/Inventory-Management-System"
+          class="round-link"
+          aria-label="Stock Wise"
+        >
+          ↗
+        </a>
+
+      </div>
+
+      <!-- Project technologies -->
+      <div class="project-tags">
+        <span>REACT</span>
+        <span>TypeScript</span>
+        <span>Tailwind CSS</span>
+        <span>NestJS</span>
+        <span>REST API</span>
+        <span>PostgreSQL</span>
+        <span>Git & Github</span>
+      </div>
+
+    </article>
+
+
+    <!-- Project 3: Little Notes -->
+    <article class="project-card">
+
+      <!-- Project artwork -->
+      <div class="project-art art-notes">
+
+        <video
+          class="project-video"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source src="videos/FireWatch_cut.webm" type="video/webm"> 
+        </video>
+
+        <span class="art-index">03 / 03</span>
+
+      </div>
+
+      <!-- Project description -->
+      <div class="project-info">
+
+        <div>
+          <p class="project-type">WEB APP · 2026</p>
+
+          <h3>FireWatch</h3>
+
+          <p>
+           Fire Watch is an environmental science project designed to monitor wildfire and deforestation-related fire activity using satellite-based fire hotspot data.
+          </p>
+        </div>
+
+        <a
+          href="https://github.com/JSenpai12/Fire-Watch"
+          class="round-link"
+          aria-label="FireWatch"
+        >
+          ↗
+        </a>
+
+      </div>
+
+      <!-- Project technologies -->
+      <div class="project-tags">
+        <span>REACT</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>Leaflet</span>
+        <span>CSS</span>
+        <span>Git & GitHub</span>
+      </div>
+
+    </article>
+
+  </div>
+
+</div>
+
+
+      <!-- Carousel helper text -->
+      <p class="carousel-hint">
+        <span class="status-dot"></span>
+        Use the arrows to browse selected projects
+      </p>
+
+    </section>
+
+    <!-- ==============================
+         GitHub section
+    =============================== -->
+    <section class="github-section section-shell" id="experience">
+
+      <!-- GitHub introduction -->
+      <div class="github-copy">
+
+        <p class="eyebrow">03 — THE GITHUB SIDE</p>
+
+        <h2>
+          Small commits.<br>
+          <span>Big curiosity.</span>
+        </h2>
+
+        <p>
+          Good work is built one step at a time. I enjoy experimenting,
+          learning in public, and improving a little with every project.
+        </p>
+
+        <a
+          class="button button-light"
+          href="https://github.com/JSenpai12"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Visit my GitHub
+          <span>↗</span>
+        </a>
+
+      </div>
+
+
+      <!-- GitHub contribution card -->
+      <div class="contribution-card">
+
+        <!-- Card heading -->
+        <div class="contribution-top">
+          <span>CONTRIBUTION ACTIVITY</span>
+          <span class="github-icon">◉</span>
+        </div>
+
+        <!-- Contribution count -->
+        <div class="contribution-count">
+          <strong>142</strong>
+          <span>contributions in the last year</span>
+        </div>
+
+        <!-- Contribution graph -->
+        <div
+          class="contribution-grid"
+          id="contributionGrid"
+          aria-label="Illustrative contribution activity grid"
+        ></div>
+
+        <!-- Contribution intensity legend -->
+        <div class="contribution-legend">
+          <span>Less</span>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <span>More</span>
+        </div>
+
+        <!-- Repository list -->
+        <div class="repo-list">
+
+          <!-- Repository 1 -->
+          <div>
+
+            <span class="repo-icon">◌</span>
+
+            <span>
+              <b>Web-Server-Performance-Stats-GUI</b>
+              <small>Shell script web ui that analyse server performance stats</small>
+            </span>
+
+            <em>TypeScript</em>
+
+          </div>
+
+          <!-- Repository 2 -->
+          <div>
+
+            <span class="repo-icon">◌</span>
+
+            <span>
+              <b>Server Performance Stats</b>
+              <small>Shell script server performance stats analyzer</small>
+            </span>
+
+            <em>Shell</em>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- ==============================
+         Contact section
+    =============================== -->
+    <section class="contact-section section-shell" id="contact">
+
+      <p class="eyebrow">04 — HAVE SOMETHING IN MIND?</p>
+
+      <!-- Contact heading -->
+      <div class="contact-row">
+
+        <h2>
+          Let’s make<br>
+          <span>it happen.</span>
+        </h2>
+
+        <a
+          class="contact-arrow"
+          href="mailto:jhonmekierbayan@gmail.com"
+          aria-label="Send an email"
+        >
+          ↗
+        </a>
+
+      </div>
+
+      <!-- Contact details -->
+      <div class="contact-bottom">
+
+        <p>
+          Have a project, an idea, or just want to say hello?<br>
+          My inbox is always open.
+        </p>
+
+        <a href="mailto:jhonmekierbayan@gmail.com">
+          jhonmekierbayan@gmail.com ↗
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ==============================
+       Footer
+  =============================== -->
+  <footer class="site-footer section-shell">
+
+    <!-- Footer brand -->
+    <a class="brand" href="#home">
+
+      <span class="brand-mark">⌘</span>
+
+      <span>
+        jhonmekierbayan<span class="brand-muted">.dev</span>
+      </span>
+
+    </a>
+
+    <span>DESIGNED & BUILT WITH CURIOSITY.</span>
+
+    <span>© 2026 JHON MEKIER BAYAN</span>
+
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+```
